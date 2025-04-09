@@ -211,27 +211,27 @@ html.no-scroll {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: #FAFAFa;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 10px;
+  background-color: #000;
+  padding: 15px 10px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  z-index: 100; /* Garante que fique acima de outros elementos */
 }
 
-/* Estilo dos Ícones */
-.social-icon img {
-  width: 40px; /* Tamanho dos ícones */
-  height: 40px; /* Mantém a proporção */
-  transition: transform 0.3s ease; /* Animação suave */
+/* Estilo dos Ícones Font Awesome */
+.social-bar a {
+  color: #fff; /* Ícones brancos */
+  font-size: 1.5rem; /* Tamanho dos ícones */
+  transition: all 0.3s ease;
+  opacity: 0.8;
 }
 
 /* Efeito Hover nos Ícones */
-.social-icon img:hover {
-  transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+.social-bar a:hover {
+  color: #7843E9; /* Roxo no hover */
+  opacity: 1;
+  transform: scale(1.2);
 }
-
-
-
 
 
 /* Container para centralizar na parte de baixo */

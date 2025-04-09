@@ -38,21 +38,140 @@ body {
 }
 
 .conteudo {
-    height: 100vh;
+  justify-content: space-between; /* Espaçamento entre os blocos */
+  gap: 40px; /* Espaçamento entre os itens */
+    margin-top: 4rem;
+    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     padding: 20px;
 }
 
 .conteudo p {
   color: #333;
-  font-size: 1.6rem;
-  text-align: center;
-  width: 70%;
+  font-size: 1.2rem;
+  text-align: start;
+  width: 50%;
   line-height: 1.6;
   margin-top: 2rem;
   margin-bottom: 3rem; /* Espaçamento entre p e botão */
+}
+
+.conteudo h2 {
+  font-size: 2.5rem; /* Tamanho do título principal */
+  margin-bottom: 5px; /* Espaçamento abaixo do título */
+}
+
+.conteudo ul {
+  color: #333;
+  font-size: 1.1rem;
+  text-align: start;
+  width: 50%;
+  line-height: 1.6;
+  padding-left: 1.5rem; /* para alinhar os marcadores */
+  list-style-type: disc;
+}
+
+.conteudo li {
+  margin-bottom: 1rem; /* espaço entre os itens */
+}
+
+.about-box {
+  flex: 1; /* Faz os dois blocos ocuparem o mesmo espaço */
+}
+
+/* Títulos (h2) dos Blocos */
+.about-box h2 {
+  font-size: 2.4rem; /* Tamanho do título */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  padding: 12px 25px;
+  border-radius: 8px;
+  background: #7843E9;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  background: #6a3ad1;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+}
+
+.footer-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.footer-text h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-text p {
+  color: #aaa;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #7843E9;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 20px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.footer-copyright i {
+  margin-right: 5px;
 }
