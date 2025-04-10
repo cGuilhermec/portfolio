@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gestão Inteligente de Calorias com IA</title>
+    <title>LifePlus</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +23,8 @@
 
     <link rel="stylesheet" href="../css/Navbar.css" />
     <link rel="stylesheet" href="../css/GestaoInteligente.css" />
+
+    <script src="../scripts/Gestao-Inteligente.js" defer></script>
   </head>
   <body>
     <header class="navbar">
@@ -40,12 +42,12 @@
       <p>
         Esta página apresenta o estudo completo do LifePlus, uma solução
         inovadora para monitoramento nutricional inteligente, incluindo visão
-        geral do projeto, tecnologias utilizadas e links de acesso.
+        geral do projeto, tecnologias utilizadas.
       </p>
     </section>
 
     <section class="conteudo">
-      <img src="../images/lifePlus.png" alt="" />
+      <img src="../images/LifePlus/lifeplus.png" alt="" />
       <h2>Overview</h2>
       <p>
         O LifePlus é um projeto desenvolvido pela nossa equipe com o objetivo de
@@ -150,6 +152,54 @@
         os usuários cuidam da alimentação e da saúde.
       </p>
 
+      <div class="galeria-container">
+        <div class="carrossel">
+          <button class="seta seta-esquerda">&#10094;</button>
+
+          <div class="galeria">
+            <img
+              src="../images/LifePlus/login.png"
+              alt="Tela inicial"
+              class="thumb"
+            />
+            <img
+              src="../images/LifePlus/cadastro.png"
+              alt="Dashboard"
+              class="thumb"
+            />
+            <img
+              src="../images/LifePlus/home.png"
+              alt="Página inicial"
+              class="thumb"
+            />
+            <img
+              src="../images/LifePlus/Cadstro_calorias.png"
+              alt="Cadastro de calorias"
+              class="thumb"
+            />
+            <img
+              src="../images/LifePlus/Visualizar_refeicao.png"
+              alt="Visualizar refeição"
+              class="thumb"
+            />
+            <img
+              src="../images/LifePlus/ChatBoot.png"
+              alt="ChatBot"
+              class="thumb"
+            />
+          </div>
+
+          <button class="seta seta-direita">&#10095;</button>
+        </div>
+
+        <!-- Lightbox/Modal -->
+        <div class="lightbox" id="lightbox">
+          <span class="close-btn">&times;</span>
+          <img class="lightbox-content" id="lightbox-img" />
+          <div class="caption" id="caption"></div>
+        </div>
+      </div>
+
       <div class="about-box">
         <h2>Tecnologias Utilizadas</h2>
         <ul class="skills-list">
@@ -162,6 +212,7 @@
           <li>GIT</li>
           <li>JWT</li>
           <li>MongoDB</li>
+          <li>Mongoose</li>
           <li>Figma</li>
           <li>Trello</li>
         </ul>
