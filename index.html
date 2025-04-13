@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./src/css/Projects.css" />
     <link rel="stylesheet" href="./src/css/contact.css" />
     <link rel="stylesheet" href="./src/css/GestaoInteligente.css" />
+    <link rel="stylesheet" href="./src/css/Navbar.css" />
   </head>
 
   <body>
@@ -33,14 +34,20 @@
     <div class="splash-screen" id="splash"></div>
 
     <!-- Header (aparece após o splash) -->
-    <header class="navbar hidden" id="navbar">
+    <header class="navbar" id="navbar">
       <div class="logo">Guilherme Carvalho</div>
-      <nav class="nav-links">
-        <a href="#home">Início</a>
-        <a href="#sobre">Sobre Mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-      </nav>
+      <div class="nav-container">
+        <nav class="nav-links">
+          <a href="#home">Início</a>
+          <a href="#sobre">Sobre Mim</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <!-- Botão menu (vai ser manipulado via JS) -->
+        <button class="menu-button" aria-label="Abrir menu de navegação">
+          ☰
+        </button>
+      </div>
     </header>
 
     <!-- Seção 1: Home -->
@@ -334,7 +341,7 @@
       </div>
     </section>
 
-     <footer>
+    <footer>
       <div class="footer-content">
         <div class="footer-text">
           <h1>Guilherme Carvalho</h1>
@@ -372,6 +379,7 @@
       </div>
     </footer>
 
+    <script src="./src/scripts/NavBar.js"></script>
     <script src="./src/scripts/splash.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
     <script src="./src/scripts/contact.js"></script>
