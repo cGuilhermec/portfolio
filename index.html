@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/About.css" />
     <link rel="stylesheet" href="./src/css/Projects.css" />
+    <link rel="stylesheet" href="./src/css/contact.css" />
+    <link rel="stylesheet" href="./src/css/GestaoInteligente.css" />
   </head>
 
   <body>
@@ -245,40 +247,45 @@
         </div>
         <!-- Projeto 05 -->
         <div class="projects-img">
-          <img
-            src="./src/images/Flux_Dev_A_futuristic_minimalist_environment_with_a_software_d_0.jpeg"
-            alt=""
-          />
+          <img src="./src/images/StudioSrv/StudioSRV.png" alt="" />
           <div class="project-text">
-            <h3>Gestão Inteligente de Calorias com IA</h3>
+            <h3>Visiona</h3>
             <p>
-              Plataforma que auxilia no controle da alimentação e adoção de
-              hábitos saudáveis. Com inteligência artificial, oferece
-              recomendações personalizadas de dieta e treinos, além de responder
-              dúvidas sobre nutrição e exercícios. Possui interface intuitiva,
-              gráficos e painéis interativos para monitoramento do progresso.
-              Desenvolvida com TypeScript, React e MongoDB.
+              Plataforma web desenvolvida para otimizar o processo de mapeamento
+              de uso e ocupação da terra. Permite o cadastro de projetos,
+              delimitação de áreas, atribuição de tarefas e carregamento de
+              polígonos para edição. Conta com geração de estatísticas, filtros
+              e exportação de relatórios em PDF. Criada com foco em
+              produtividade e colaboração para empresas de geotecnologia,
+              utilizando TypeScript, Node.js, React e MySQL.
             </p>
-            <button>Projeto</button>
+            <a
+              href="./src/pages/Visiona.html"
+              target="_blank"
+              class="btn-project"
+              >Projeto</a
+            >
           </div>
         </div>
         <!-- Projeto 06 -->
         <div class="projects-img">
-          <img
-            src="./src/images/Flux_Dev_A_futuristic_minimalist_environment_with_a_software_d_0.jpeg"
-            alt=""
-          />
+          <img src="./src/images/StudioSrv/StudioSRV.png" alt="" />
           <div class="project-text">
-            <h3>Gestão Inteligente de Calorias com IA</h3>
+            <h3>Multi-Banco de Dados com Arquitetura Distribuída</h3>
             <p>
-              Plataforma que auxilia no controle da alimentação e adoção de
-              hábitos saudáveis. Com inteligência artificial, oferece
-              recomendações personalizadas de dieta e treinos, além de responder
-              dúvidas sobre nutrição e exercícios. Possui interface intuitiva,
-              gráficos e painéis interativos para monitoramento do progresso.
-              Desenvolvida com TypeScript, React e MongoDB.
+              Sistema distribuído com suporte a múltiplos bancos de dados:
+              PostgreSQL, MongoDB e MySQL. Permite a escolha dinâmica do banco
+              para gravação e leitura de dados, com fallback automático para
+              garantir disponibilidade. Desenvolvido com React e TypeScript no
+              front-end, e Node.js no back-end, o projeto garante flexibilidade,
+              escalabilidade e confiabilidade na gestão de dados.
             </p>
-            <button>Projeto</button>
+            <a
+              href="./src/pages/Multi-Banco.html"
+              target="_blank"
+              class="btn-project"
+              >Projeto</a
+            >
           </div>
         </div>
       </div>
@@ -286,10 +293,87 @@
 
     <!-- Seção 4: Contato -->
     <section id="contato" class="content contact-section hidden">
-      <h2>Entre em Contato</h2>
-      <p>Vamos construir algo incrível juntos? Me envie uma mensagem!</p>
+      <div class="contact-container">
+        <h2>Entre em Contato</h2>
+        <p class="contact-subtitle">
+          Fique à vontade para me contactar por um desses canais
+        </p>
+
+        <div class="contact-cards">
+          <!-- Cartão de E-mail -->
+          <div class="contact-card email-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <h3>E-mail</h3>
+              <p>guilherme-9951@live.com</p>
+              <button
+                class="copy-btn"
+                data-clipboard-text="guilherme-9951@live.com"
+              >
+                <i class="far fa-copy"></i> Copiar
+              </button>
+            </div>
+          </div>
+
+          <!-- Cartão de Telefone -->
+          <div class="contact-card phone-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-info">
+              <h3>Telefone</h3>
+              <p>(12) 98240-3733</p>
+              <a href="tel:+5512982403733" class="action-btn">
+                <i class="fas fa-phone"></i> Ligar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+     <footer>
+      <div class="footer-content">
+        <div class="footer-text">
+          <h1>Guilherme Carvalho</h1>
+          <p>
+            Desenvolvedor Full Stack apaixonado por construir tanto o Frontend
+            quanto o Backend de sites e aplicações web, entregando soluções
+            digitais completas, escaláveis e eficientes que contribuem
+            diretamente para o sucesso do produto.
+          </p>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/_guihcarvalho_"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/guilherme-carvalho-1b8b08156/"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://github.com/cGuilhermec"
+            aria-label="GitHub"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <i class="fas fa-copyright"></i> Copyright 2025. Made by Guilherme
+        Carvalho
+      </div>
+    </footer>
+
     <script src="./src/scripts/splash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <script src="./src/scripts/contact.js"></script>
   </body>
 </html>
