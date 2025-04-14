@@ -27,14 +27,20 @@
     <script src="../scripts/Gestao-Inteligente.js" defer></script>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar" id="navbar">
       <div class="logo">Guilherme Carvalho</div>
-      <nav class="nav-links">
-        <a href="../../index.html#home">Início</a>
-        <a href="../../index.html#sobre">Sobre Mim</a>
-        <a href="../../index.html#projetos">Projetos</a>
-        <a href="../../index.html#contato">Contato</a>
-      </nav>
+      <div class="nav-container">
+        <nav class="nav-links">
+          <a href="#home">Início</a>
+          <a href="#sobre">Sobre Mim</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <!-- Botão menu (vai ser manipulado via JS) -->
+        <button class="menu-button" aria-label="Abrir menu de navegação">
+          ☰
+        </button>
+      </div>
     </header>
 
     <section class="inicio">
@@ -44,6 +50,12 @@
         desenvolvida com fins didáticos pela WebWizards Pro, demonstrando a
         aplicação da metodologia ágil Scrum em um ambiente educacional.
       </p>
+      <a
+        href="https://cguilhermec.github.io/WebWizardsPro/"
+        target="_blank"
+        class="btn"
+        >Link do Projeto</a
+      >
     </section>
 
     <section class="conteudo">
@@ -113,16 +125,12 @@
           <button class="seta seta-esquerda">&#10094;</button>
 
           <div class="galeria">
-             <img
+            <img
               src="../images/SiteScrum/Splash-Screen.png"
               alt="Splash-Screen"
               class="thumb"
             />
-            <img
-              src="../images/SiteScrum/home.png"
-              alt="Home"
-              class="thumb"
-            />
+            <img src="../images/SiteScrum/home.png" alt="Home" class="thumb" />
             <img
               src="../images/SiteScrum/home2.png"
               alt="Tela principal"
@@ -211,5 +219,7 @@
         Carvalho
       </div>
     </footer>
+
+    <script src="../scripts/NavBar.js"></script>
   </body>
 </html>

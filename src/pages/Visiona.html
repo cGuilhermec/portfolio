@@ -27,14 +27,20 @@
     <script src="../scripts/Gestao-Inteligente.js" defer></script>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar" id="navbar">
       <div class="logo">Guilherme Carvalho</div>
-      <nav class="nav-links">
-        <a href="../../index.html#home">Início</a>
-        <a href="../../index.html#sobre">Sobre Mim</a>
-        <a href="../../index.html#projetos">Projetos</a>
-        <a href="../../index.html#contato">Contato</a>
-      </nav>
+      <div class="nav-container">
+        <nav class="nav-links">
+          <a href="#home">Início</a>
+          <a href="#sobre">Sobre Mim</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <!-- Botão menu (vai ser manipulado via JS) -->
+        <button class="menu-button" aria-label="Abrir menu de navegação">
+          ☰
+        </button>
+      </div>
     </header>
 
     <section class="inicio">
@@ -48,7 +54,7 @@
     </section>
 
     <section class="conteudo">
-      <img src="../images/StudioSrv/StudioSRV.png" alt="" />
+      <img src="../images/Visiona/Visiona.png" alt="" />
       <h2>Overview</h2>
       <p>
         O <strong>Sistema de Gestão de Mapeamento Colaborativo</strong> foi um
@@ -224,5 +230,7 @@
         Carvalho
       </div>
     </footer>
+
+    <script src="../scripts/NavBar.js"></script>
   </body>
 </html>

@@ -367,3 +367,22 @@ footer {
     padding: 0 10px;
   }
 }
+
+.btn {
+  background: #7843E9;
+  margin-top: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  padding: clamp(1rem, 2vw, 1.2rem) clamp(2rem, 4vw, 3rem);
+  text-decoration: none;
+  transition: transform 0.3s;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
