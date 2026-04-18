@@ -198,8 +198,8 @@ footer {
 
 .thumb {
   scroll-snap-align: start;
-  min-width: 250px;
-  height: 140px;
+  min-width: 400px;  /* Bem maior */
+  height: 250px;     /* Bem maior */
   object-fit: cover;
   border-radius: 6px;
   cursor: pointer;
@@ -295,8 +295,8 @@ footer {
   }
   
   .thumb {
-    min-width: 200px;
-    height: 140px;
+    min-width: 280px;
+    height: 240px;
   }
   
   .seta {
