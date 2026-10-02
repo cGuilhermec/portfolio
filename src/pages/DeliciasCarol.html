@@ -1,275 +1,219 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ecossistema de Gestão Comercial</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
 
-    /* Adicione isso no head do seu HTML para os ícones */
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GcFlow — Ecossistema de Gestão Comercial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="../css/Navbar.css" />
-    <link rel="stylesheet" href="../css/GestaoInteligente.css" />
-    <link rel="stylesheet" href="../css/Galeria.css" />
+  /* Adicione isso no head do seu HTML para os ícones */
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
-    <script src="../scripts/Gestao-Inteligente.js" defer></script>
-  </head>
-  <body>
-    <header class="navbar" id="navbar">
-      <div class="logo">Guilherme Carvalho</div>
-      <div class="nav-container">
-        <nav class="nav-links">
-          <a href="../../index.html#home">Início</a>
-          <a href="../../index.html#sobre">Sobre Mim</a>
-          <a href="../../index.html#projetos">Projetos</a>
-          <a href="../../index.html#contato">Contato</a>
-        </nav>
-        <!-- Botão menu (vai ser manipulado via JS) -->
-        <button class="menu-button" aria-label="Abrir menu de navegação">
-          ☰
-        </button>
+  <link rel="stylesheet" href="../css/Navbar.css" />
+  <link rel="stylesheet" href="../css/GestaoInteligente.css" />
+  <link rel="stylesheet" href="../css/Galeria.css" />
+
+  <script src="../scripts/Gestao-Inteligente.js" defer></script>
+</head>
+
+<body>
+  <header class="navbar" id="navbar">
+    <div class="logo">Guilherme Carvalho</div>
+    <div class="nav-container">
+      <nav class="nav-links">
+        <a href="../../index.html#home">Início</a>
+        <a href="../../index.html#sobre">Sobre Mim</a>
+        <a href="../../index.html#projetos">Projetos</a>
+        <a href="../../index.html#contato">Contato</a>
+      </nav>
+      <!-- Botão menu (vai ser manipulado via JS) -->
+      <button class="menu-button" aria-label="Abrir menu de navegação">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <section class="inicio">
+    <h1>GcFlow</h1>
+    <p>
+      O <strong>GcFlow</strong> é uma solução Fullstack de alta performance projetada para centralizar a
+      inteligência de negócios. Do controle de estoque à gestão
+      financeira em tempo real, entregando eficiência operacional em uma
+      interface web completa, atualizada e pronta para produção.
+    </p>
+  </section>
+
+  <section class="conteudo">
+    <img src="../images/Delicias da Carol/Login.png" alt="GcFlow Home" />
+    <h2>Overview</h2>
+    <p>
+      O <strong>GcFlow</strong> foi desenvolvido para eliminar silos de informação em
+      pequenos e médios negócios, unindo agilidade na ponta (venda) com
+      robustez na retaguarda (gestão). Hoje o projeto está 100% atualizado
+      e em produção, acessível através da URL: <a href="https://gcwebservice.com.br/"
+        target="_blank">gcwebservice.com.br</a>.
+    </p>
+    <ul>
+      <li>
+        <strong>PDV Integrado:</strong> Fluxo de transações otimizado
+        para a web, garantindo agilidade no registro de vendas.
+      </li>
+      <li>
+        <strong>Inteligência de Inventário:</strong> Sistema de controle de
+        estoque com atualização em tempo real e gatilhos de alerta para níveis
+        críticos.
+      </li>
+      <li>
+        <strong>Gestão de Ativos Financeiros:</strong> Módulo de fluxo de
+        caixa e controle de pagamentos integrado diretamente às vendas.
+      </li>
+      <li>
+        <strong>Data Analytics:</strong> Visualização de métricas de
+        desempenho via gráficos interativos para suporte à decisão
+        estratégica.
+      </li>
+    </ul>
+    <p>Destaques do projeto que construí:</p>
+    <ul>
+      <li>
+        Interface altamente otimizada para agilizar o processo de vendas
+      </li>
+      <li>Sistema de alertas para estoque baixo que implementei</li>
+      <li>
+        Relatórios completos que desenvolvi para <strong>vendas</strong>,
+        <strong>estoque</strong> e <strong>financeiro</strong>
+      </li>
+      <li>
+        Solução 100% <strong>autoral</strong>, criada para atender
+        necessidades reais do mercado
+      </li>
+    </ul>
+    <p>
+      Projetei o GcFlow para ser uma ferramenta
+      prática, robusta e eficiente, que realmente facilita o dia a dia do
+      usuário.
+    </p>
+
+    <h2>Arquitetura e Tecnologias Utilizadas</h2>
+    <p>
+      A arquitetura foi desenhada seguindo o padrão MSC
+      (Model-Service-Controller), priorizando a separação de responsabilidades
+      e a manutenibilidade do código.
+    </p>
+    <ul>
+      <li>
+        <strong>Core Backend:</strong> Desenvolvido com
+        <strong>Node.js</strong> e <strong>TypeScript</strong>, utilizando
+        <strong>Prisma ORM</strong> sobre <strong>MySQL</strong> para garantir
+        transações seguras e consistentes.
+      </li>
+      <li>
+        <strong>Segurança:</strong> Implementação de camadas de proteção com
+        <strong>JWT</strong> para autenticação e <strong>Bcrypt</strong> para
+        criptografia de dados sensíveis.
+      </li>
+      <li>
+        <strong>Front-end Web:</strong> Aplicação web 100% atualizada,
+        oferecendo uma experiência multiplataforma fluida, responsiva e pronta
+        para escalar no ambiente de produção.
+      </li>
+    </ul>
+    <p>
+      Esta arquitetura que construí sozinho resulta em uma plataforma robusta
+      e eficiente, demonstrando minha capacidade de desenvolver soluções
+      completas.
+    </p>
+
+    <div class="galeria-container">
+      <div class="carrossel">
+        <button class="seta-esquerda">&#10094;</button>
+
+        <div class="galeria">
+          <img src="../images/Delicias da Carol/Login.png" alt="Tela de login" class="thumb" />
+          <img src="../images/Delicias da Carol/home.png" alt="Home" class="thumb" />
+          <img src="../images/Delicias da Carol/PDV.png" alt="PDV" class="thumb" />
+          <img src="../images/Delicias da Carol/clientes.png" alt="Clientes" class="thumb" />
+          <img src="../images/Delicias da Carol/catalogo_publico.png" alt="Catálogo Público" class="thumb" />
+          <img src="../images/Delicias da Carol/estoque.png" alt="Estoque" class="thumb" />
+          <img src="../images/Delicias da Carol/insumos.png" alt="Insumos" class="thumb" />
+          <img src="../images/Delicias da Carol/produto.png" alt="Produtos" class="thumb" />
+          <img src="../images/Delicias da Carol/financeiro.png" alt="Financeiro Geral" class="thumb" />
+          <img src="../images/Delicias da Carol/financeiro_IA.png" alt="Análise Financeira com IA" class="thumb" />
+          <img src="../images/Delicias da Carol/financeiro_analise_lucrativa.png" alt="Análise de Lucratividade"
+            class="thumb" />
+          <img src="../images/Delicias da Carol/financeiro_comparativo.png" alt="Comparativo Financeiro"
+            class="thumb" />
+          <img src="../images/Delicias da Carol/financeiro_relatorio.png" alt="Relatório Financeiro" class="thumb" />
+          <img src="../images/Delicias da Carol/historico_vendas.png" alt="Histórico de Vendas" class="thumb" />
+          <img src="../images/Delicias da Carol/historico_vendas_recibo.png" alt="Recibo de Venda" class="thumb" />
+          <img src="../images/Delicias da Carol/encomendas.png" alt="Encomendas" class="thumb" />
+          <img src="../images/Delicias da Carol/link_encomenda.png" alt="Link de Encomenda" class="thumb" />
+          <img src="../images/Delicias da Carol/link_encomenda_carrinho.png" alt="Carrinho de Encomenda"
+            class="thumb" />
+          <img src="../images/Delicias da Carol/cupom_desconto.png" alt="Cupons de Desconto" class="thumb" />
+          <img src="../images/Delicias da Carol/notificacao.png" alt="Notificações" class="thumb" />
+          <img src="../images/Delicias da Carol/minha_conta.png" alt="Minha Conta" class="thumb" />
+          <img src="../images/Delicias da Carol/configs.png" alt="Configurações" class="thumb" />
+          <img src="../images/Delicias da Carol/suporte.png" alt="Suporte" class="thumb" />
+        </div>
+
+        <button class="seta-direita">&#10095;</button>
       </div>
-    </header>
 
-    <section class="inicio">
-      <h1>Ecossistema de Gestão Comercial</h1>
-      <p>
-        Uma solução Fullstack de alta performance projetada para centralizar a
-        inteligência de negócios. Do controle preditivo de estoque à gestão
-        financeira em tempo real, entregando eficiência operacional em uma
-        interface mobile intuitiva.
-      </p>
-    </section>
+      <!-- Lightbox/Modal -->
+      <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" />
+        <div class="caption" id="caption"></div>
+      </div>
+    </div>
 
-    <section class="conteudo">
-      <img src="../images/Delicias da Carol/Delicias_Da_Carol.png" alt="" />
-      <h2>Overview</h2>
-      <p>
-        O ecossistema foi desenvolvido para eliminar silos de informação em
-        pequenos e médios negócios, unindo agilidade na ponta (venda) com
-        robustez na retaguarda (gestão).
-      </p>
-      <ul>
-        <li>
-          <strong>PDV Mobile Integrado:</strong> Fluxo de transações otimizado
-          para mobile, garantindo agilidade no registro de vendas.
-        </li>
-        <li>
-          <strong>Inteligência de Inventário:</strong> Sistema de controle de
-          estoque com atualização em tempo real e gatilhos de alerta para níveis
-          críticos.
-        </li>
-        <li>
-          <strong>Gestão de Ativos Financeiros:</strong> Módulo de fluxo de
-          caixa e controle de pagamentos integrado diretamente às vendas.
-        </li>
-        <li>
-          <strong>Data Analytics:</strong> Visualização de métricas de
-          desempenho via gráficos interativos para suporte à decisão
-          estratégica.
-        </li>
+    <div class="about-box">
+      <h2>Tecnologias Utilizadas</h2>
+      <ul class="skills-list">
+        <li>React</li>
+        <li>Aplicações Web</li>
+        <li>TypeScript</li>
+        <li>Node</li>
+        <li>GitHub</li>
+        <li>GIT</li>
+        <li>JWT</li>
+        <li>MySQL</li>
+        <li>Prisma</li>
       </ul>
-      <p>Destaques do projeto que construí:</p>
-      <ul>
-        <li>
-          Interface altamente otimizada para agilizar o processo de vendas
-        </li>
-        <li>Sistema de alertas para estoque baixo que implementei</li>
-        <li>
-          Relatórios completos que desenvolvi para <strong>vendas</strong>,
-          <strong>estoque</strong> e <strong>financeiro</strong>
-        </li>
-        <li>
-          Solução 100% <strong>autoral</strong>, criada para atender
-          necessidades reais do mercado
-        </li>
-      </ul>
-      <p>
-        Projetei o Ecossistema de Gestão Comercial para ser uma ferramenta
-        prática, robusta e eficiente, que realmente facilita o dia a dia do
-        usuário.
-      </p>
+    </div>
+  </section>
 
-      <h2>Arquitetura e Tecnologias Utilizadas</h2>
-      <p>
-        A arquitetura foi desenhada seguindo o padrão MSC
-        (Model-Service-Controller), priorizando a separação de responsabilidades
-        e a manutenibilidade do código.
-      </p>
-      <ul>
-        <li>
-          <strong>Core Backend:</strong> Desenvolvido com
-          <strong>Node.js</strong> e <strong>TypeScript</strong>, utilizando
-          <strong>Prisma ORM</strong> sobre <strong>MySQL</strong> para garantir
-          transações seguras e consistentes.
-        </li>
-        <li>
-          <strong>Segurança:</strong> Implementação de camadas de proteção com
-          <strong>JWT</strong> para autenticação e <strong>Bcrypt</strong> para
-          criptografia de dados sensíveis.
-        </li>
-        <li>
-          <strong>Interface Mobile:</strong> Desenvolvida em
-          <strong>React Native</strong> com <strong>Expo</strong>, oferecendo
-          uma experiência multiplataforma fluida e responsiva.
-        </li>
-      </ul>
-      <p>
-        Esta arquitetura que construí sozinho resulta em uma plataforma robusta
-        e eficiente, demonstrando minha capacidade de desenvolver soluções
-        completas.
-      </p>
-
-      <div class="galeria-container">
-        <div class="carrossel">
-          <button class="seta-esquerda">&#10094;</button>
-
-          <div class="galeria">
-            <img
-              src="../images/Delicias da Carol/Login.png"
-              alt="Tela de login"
-              class="thumb"
-            />
-            <img
-              src="../images/Delicias da Carol/home.png"
-              alt="Home"
-              class="thumb"
-            />
-            <img
-              src="../images/Delicias da Carol/estoqueGeral.png"
-              alt="Modal Estoque"
-              class="thumb"
-            />
-            <img
-              src="../images/Delicias da Carol/controleEstoque.png"
-              alt="Controle do Estoque"
-              class="thumb"
-            />
-            <img
-              src="../images/Delicias da Carol/Estoque.png"
-              alt="Estoque"
-              class="thumb"
-            />
-            <img
-              src="../images/Delicias da Carol/ClienteArea.png"
-              alt="Area do Cliente"
-              class="thumb"
-            />
-            <img
-              src="../images/Delicias da Carol/financeiro.png"
-              alt="Financeiro"
-              class="thumb"
-            />
-            <img
-              src="../images/Delicias da Carol/Financeiro_Grafico.png"
-              alt="Graficos da página do financeiro"
-              class="thumb"
-            />
-            <img
-              src="../images/Delicias da Carol/ModaVenda.png"
-              alt="Moda de Venda"
-              class="thumb"
-            />
-            <img
-              src="../images/Delicias da Carol/Venda.png"
-              alt="Página de Venda"
-              class="thumb"
-            />
-            <img
-              src="../images/Delicias da Carol/PaginaPendencia.png"
-              alt="Verificar Pendências de suas vendas"
-              class="thumb"
-            />
-            <img
-              src="../images/Delicias da Carol/RelatorioPersonalizado.png"
-              alt="Relatório personalisado de cada pendência sua"
-              class="thumb"
-            />
-            <img
-              src="../images/Delicias da Carol/Whats.png"
-              alt="Mensagem personalizada para cobranças no WhatsApp com um botão apenas"
-              class="thumb"
-            />
-          </div>
-
-          <button class="seta-direita">&#10095;</button>
-        </div>
-
-        <!-- Lightbox/Modal -->
-        <div class="lightbox" id="lightbox">
-          <span class="close-btn">&times;</span>
-          <img class="lightbox-content" id="lightbox-img" />
-          <div class="caption" id="caption"></div>
-        </div>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-text">
+        <h1>Guilherme Carvalho</h1>
+        <p>
+          Desenvolvedor Full Stack apaixonado por construir tanto o Frontend
+          quanto o Backend de sites e aplicações web, entregando soluções
+          digitais completas, escaláveis e eficientes que contribuem
+          diretamente para o sucesso do produto.
+        </p>
       </div>
-      
-      <div class="about-box">
-        <h2>Tecnologias Utilizadas</h2>
-        <ul class="skills-list">
-          <li>React Native</li>
-          <li>EXPO</li>
-          <li>TypeScript</li>
-          <li>Node</li>
-          <li>GitHub</li>
-          <li>GIT</li>
-          <li>JWT</li>
-          <li>MySQL</li>
-          <li>Prisma</li>
-        </ul>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/_guihcarvalho_" target="_blank" aria-label="Instagram"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/guilherme-carvalho-1b8b08156/" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/cGuilhermec" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
       </div>
-    </section>
+    </div>
+    <div class="footer-copyright">
+      <i class="fas fa-copyright"></i> Copyright 2025. Made by Guilherme
+      Carvalho
+    </div>
+  </footer>
 
-    <footer>
-      <div class="footer-content">
-        <div class="footer-text">
-          <h1>Guilherme Carvalho</h1>
-          <p>
-            Desenvolvedor Full Stack apaixonado por construir tanto o Frontend
-            quanto o Backend de sites e aplicações web, entregando soluções
-            digitais completas, escaláveis e eficientes que contribuem
-            diretamente para o sucesso do produto.
-          </p>
-        </div>
-        <div class="footer-social">
-          <a
-            href="https://www.instagram.com/_guihcarvalho_"
-            target="_blank"
-            aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/guilherme-carvalho-1b8b08156/"
-            target="_blank"
-            aria-label="LinkedIn"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a
-            href="https://github.com/cGuilhermec"
-            aria-label="GitHub"
-            target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <i class="fas fa-copyright"></i> Copyright 2025. Made by Guilherme
-        Carvalho
-      </div>
-    </footer>
+  <script src="../scripts/NavBar.js"></script>
+</body>
 
-    <script src="../scripts/NavBar.js"></script>
-  </body>
 </html>
