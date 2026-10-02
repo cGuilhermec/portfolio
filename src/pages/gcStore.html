@@ -25,15 +25,20 @@
     <div class="logo">Guilherme Carvalho</div>
     <div class="nav-container">
       <nav class="nav-links">
-        <a href="../../index.html#home">Início</a>
-        <a href="../../index.html#sobre">Sobre Mim</a>
-        <a href="../../index.html#projetos">Projetos</a>
-        <a href="../../index.html#contato">Contato</a>
-      </nav>
-      <!-- Botão menu (vai ser manipulado via JS) -->
-      <button class="menu-button" aria-label="Abrir menu de navegação">
-        ☰
-      </button>
+          <a href="../../index.html#home" data-i18n="nav.home">Início</a>
+          <a href="../../index.html#sobre" data-i18n="nav.about">Sobre Mim</a>
+          <a href="../../index.html#experiencia" data-i18n="exp.title">Experiência e Formação</a>
+          <a href="../../index.html#projetos" data-i18n="nav.projects">Projetos</a>
+          <a href="../../index.html#contato" data-i18n="nav.contact">Contato</a>
+        </nav>
+        <div style="display: flex; gap: 10px; align-items: center; margin-left: 20px;">
+          <button id="theme-toggle" aria-label="Toggle Dark Mode" style="background:none; border:none; color:var(--nav-text); font-size:1.2rem; cursor:pointer;"><i class="fas fa-moon"></i></button>
+          
+          <!-- Botão menu (vai ser manipulado via JS) -->
+          <button class="menu-button" aria-label="Abrir menu de navegação">
+            ☰
+          </button>
+        </div>
     </div>
   </header>
 
@@ -49,7 +54,7 @@
 
   <section class="conteudo">
     <img src="../images/Delicias da Carol/Login.png" alt="GcFlow Home" />
-    <h2>Overview</h2>
+    <h2 data-i18n="project.overview">Visão Geral</h2>
     <p>
       O <strong>GcFlow</strong> foi desenvolvido para eliminar silos de informação em
       pequenos e médios negócios, unindo agilidade na ponta (venda) com
@@ -98,7 +103,7 @@
       usuário.
     </p>
 
-    <h2>Arquitetura e Tecnologias Utilizadas</h2>
+    <h2 data-i18n="project.arch">Arquitetura e Tecnologias Utilizadas</h2>
     <p>
       A arquitetura foi desenhada seguindo o padrão MSC
       (Model-Service-Controller), priorizando a separação de responsabilidades
@@ -173,7 +178,7 @@
     </div>
 
     <div class="about-box">
-      <h2>Tecnologias Utilizadas</h2>
+      <h2 data-i18n="project.tech">Tecnologias Utilizadas</h2>
       <ul class="skills-list">
         <li>React</li>
         <li>Aplicações Web</li>
@@ -192,7 +197,7 @@
     <div class="footer-content">
       <div class="footer-text">
         <h1>Guilherme Carvalho</h1>
-        <p>
+        <p data-i18n="footer.desc">
           Desenvolvedor Full Stack apaixonado por construir tanto o Frontend
           quanto o Backend de sites e aplicações web, entregando soluções
           digitais completas, escaláveis e eficientes que contribuem
@@ -214,6 +219,7 @@
   </footer>
 
   <script src="../scripts/NavBar.js"></script>
+  <script src="../scripts/theme-lang.js"></script>
 </body>
 
 </html>

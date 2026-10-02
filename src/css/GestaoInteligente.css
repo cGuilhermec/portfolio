@@ -7,6 +7,9 @@
 body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .inicio {
@@ -17,8 +20,8 @@ body {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background: #FAFAFA;
-    color: #000;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
 }
 
 .inicio h1:first-of-type {
@@ -27,7 +30,7 @@ body {
 }
 
 .inicio p {
-  color: #333;
+  color: var(--text-secondary);
   font-size: clamp(1.1rem, 3vw, 1.6rem);
   text-align: center;
   width: 90%;
@@ -49,7 +52,7 @@ body {
 }
 
 .conteudo p {
-  color: #333;
+  color: var(--text-secondary);
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   text-align: start;
   width: 90%;
@@ -64,7 +67,7 @@ body {
 }
 
 .conteudo ul {
-  color: #333;
+  color: var(--text-secondary);
   font-size: clamp(1rem, 2.5vw, 1.1rem);
   text-align: start;
   width: 90%;
@@ -103,23 +106,23 @@ body {
 .skills-list li {
   padding: 10px 20px;
   border-radius: 8px;
-  background: #7843E9;
+  background: var(--primary-accent);
   color: white;
   font-weight: bold;
   font-size: clamp(0.9rem, 2vw, 1.1rem);
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 .skills-list li:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  background: #6a3ad1;
+  box-shadow: 0 6px 8px var(--shadow-color);
+  background: var(--nav-text);
 }
 
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
   padding: 30px 15px 15px;
 }
 
@@ -131,7 +134,7 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 20px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .footer-text {
@@ -145,7 +148,7 @@ footer {
 }
 
 .footer-text p {
-  color: #aaa;
+  color: var(--text-secondary);
   line-height: 1.6;
   font-size: clamp(0.9rem, 2vw, 1rem);
 }
@@ -157,7 +160,7 @@ footer {
 }
 
 .footer-social a {
-  color: #fff;
+  color: var(--text-primary);
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
@@ -165,7 +168,7 @@ footer {
 .footer-copyright {
   text-align: center;
   padding-top: 15px;
-  color: #777;
+  color: var(--text-secondary);
   font-size: 0.8rem;
 }
 
@@ -204,7 +207,7 @@ footer {
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 
@@ -371,14 +374,14 @@ footer {
 }
 
 .btn {
-  background: #7843E9;
+  background: var(--primary-accent);
   margin-top: 40px;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
   border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 15px 0 var(--shadow-color);
   padding: clamp(1rem, 2vw, 1.2rem) clamp(2rem, 4vw, 3rem);
   text-decoration: none;
   transition: transform 0.3s;

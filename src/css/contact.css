@@ -1,7 +1,7 @@
 /* Estilos da Seção de Contato */
 .contact-section {
-  background: #FAFAFA;
-  color: #2c3e50;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
   padding: 80px 20px;
   position: relative;
 }
@@ -19,13 +19,13 @@
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #2c3e50;
+  color: var(--text-primary);
 }
 
 .contact-subtitle {
   font-size: 1.2rem;
   margin-bottom: 3rem;
-  color: #666;
+  color: var(--text-secondary);
 }
 
 .contact-cards {
@@ -36,46 +36,46 @@
 }
 
 .contact-card {
-  background: white;
+  background: var(--bg-color);
   border-radius: 15px;
   padding: 30px;
   width: 300px;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px var(--shadow-color);
   text-align: center;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--border-color, transparent);
 }
 
 .contact-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px var(--shadow-color);
 }
 
 .contact-icon {
   width: 70px;
   height: 70px;
-  background: #f0f0f0;
+  background: var(--bg-secondary);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
-  color: #2c3e50;
+  color: var(--primary-accent);
   font-size: 1.8rem;
-  border: 2px solid #e0e0e0;
+  border: 2px solid var(--border-color, transparent);
 }
 
 .contact-info h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #2c3e50;
+  color: var(--text-primary);
 }
 
 .contact-info p {
   font-size: 1.1rem;
   margin-bottom: 20px;
   word-break: break-all;
-  color: #555;
+  color: var(--text-secondary);
 }
 
 .copy-btn, .action-btn {
@@ -93,22 +93,23 @@
 }
 
 .copy-btn {
-  background: #e0e0e0;
-  color: #2c3e50;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .copy-btn:hover {
-  background: #d0d0d0;
+  background: var(--primary-accent);
+  color: white;
 }
 
 .action-btn {
-  background: #2c3e50;
+  background: var(--primary-accent);
   color: white;
   text-decoration: none;
 }
 
 .action-btn:hover {
-  background: #1a2634;
+  background: var(--nav-text);
 }
 
 /* Responsividade */

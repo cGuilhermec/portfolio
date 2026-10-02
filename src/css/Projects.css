@@ -43,7 +43,7 @@
 
 .projects-img p {
     font-size: 1rem; /* Ajustado para mobile */
-    color: #666;
+    color: var(--text-secondary);
     max-width: 100%; /* Ocupa toda a largura */
     line-height: 1.6;
     margin-bottom: 2rem;
@@ -65,7 +65,7 @@
 }
 
 .btn-project {
-    background: #7843E9;
+    background: var(--primary-accent);
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -74,7 +74,7 @@
     max-width: 300px; /* Limite máximo */
     font-weight: 700;
     border-radius: 5px;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px 0 var(--shadow-color);
     padding: 1rem 2rem; /* Reduzido para mobile */
     font-size: 0.9rem; /* Reduzido para mobile */
     text-decoration: none;
@@ -87,7 +87,7 @@
 
 .btn-project:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px 0 var(--shadow-color);
 }
 
 .projects-header {
